@@ -6,16 +6,16 @@
     android:background="@android:color/holo_blue_dark"
     android:orientation="vertical">
 
-<com.audienl.library.WaitView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"/>
+    <com.audienl.wait_view_core.WaitView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
-<com.audienl.library.WaitView
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="200dp"
-    android:layout_height="200dp"
-    app:circle_color="#80000000"
-    app:point_color="@android:color/holo_red_light"
-    app:speed="15"
-    app:view_stroke_width="5dp"/>
+    <com.audienl.wait_view_core.WaitView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:circle_color="#80000000"
+        app:point_color="@android:color/holo_red_light"
+        app:speed="15"
+        app:view_stroke_width="5dp"/>
 </LinearLayout>

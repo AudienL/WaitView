@@ -31,13 +31,13 @@ dependencies {
 布局文件：
 ```xml
 <!-- 默认 -->
-<com.audienl.library.WaitView
+<com.audienl.wait_view_core.WaitView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"/>
 ```
 ```xml
 <!-- 自定义 -->
-<com.audienl.library.WaitView
+<com.audienl.wait_view_core.WaitView
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="200dp"
     android:layout_height="200dp"
