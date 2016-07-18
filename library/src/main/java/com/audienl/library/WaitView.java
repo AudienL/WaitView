@@ -44,7 +44,7 @@ public class WaitView extends View {
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.WaitView, defStyleAttr, 0);
         mCircleColor = a.getColor(R.styleable.WaitView_circle_color, 0x55FFFFFF);
         mPointColor = a.getColor(R.styleable.WaitView_point_color, Color.YELLOW);
-        mStrokeWidth = a.getDimensionPixelSize(R.styleable.WaitView_stroke_width, (int) dp2px(2));
+        mStrokeWidth = a.getDimensionPixelSize(R.styleable.WaitView_view_stroke_width, (int) dp2px(2));
         mSpeed = a.getInt(R.styleable.WaitView_speed, 8);
         a.recycle();
 

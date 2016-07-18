@@ -17,5 +17,5 @@
     app:circle_color="#80000000"
     app:point_color="@android:color/holo_red_light"
     app:speed="15"
-    app:stroke_width="5dp"/>
+    app:view_stroke_width="5dp"/>
 </LinearLayout>

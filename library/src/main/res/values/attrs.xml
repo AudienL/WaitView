@@ -2,7 +2,7 @@
     <declare-styleable name="WaitView">
         <attr name="circle_color" format="color"/>
         <attr name="point_color" format="color"/>
-        <attr name="stroke_width" format="dimension"/>
+        <attr name="view_stroke_width" format="dimension"/>
         <attr name="speed" format="integer"/>
     </declare-styleable>
 </resources>
