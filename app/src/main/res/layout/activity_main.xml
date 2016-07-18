@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
+    android:orientation="vertical">
+
+    <com.audienl.library.WaitView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.audienl.library.WaitView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:circle_color="#80000000"
+        app:point_color="@android:color/holo_red_light"
+        app:speed="15"
+        app:stroke_width="5dp"/>
+</LinearLayout>
