@@ -106,7 +106,7 @@ public class WaitView extends View {
 
     private boolean isStart = false;
 
-    private void startAnimator() {
+    public void startAnimator() {
         if (isStart) return;
         isStart = true;
         new Thread(new Runnable() {
@@ -121,25 +121,30 @@ public class WaitView extends View {
         }).start();
     }
 
-    private void stopAnimator() {
+    public void stopAnimator() {
         isStart = false;
     }
 
-    @Override
-    protected void onVisibilityChanged(View changedView, int visibility) {
-        super.onVisibilityChanged(changedView, visibility);
-        switch (visibility) {
-            case VISIBLE:
-                startAnimator();
-                break;
-            case INVISIBLE:
-                stopAnimator();
-                break;
-            case GONE:
-                stopAnimator();
-                break;
-        }
+    public boolean isAnimatorStarted() {
+        return isStart;
     }
+
+    // 默认显示不start动画，需要手动start。
+//    @Override
+//    protected void onVisibilityChanged(View changedView, int visibility) {
+//        super.onVisibilityChanged(changedView, visibility);
+//        switch (visibility) {
+//            case VISIBLE:
+//                startAnimator();
+//                break;
+//            case INVISIBLE:
+//                stopAnimator();
+//                break;
+//            case GONE:
+//                stopAnimator();
+//                break;
+//        }
+//    }
 
     private float dp2px(int dp) {
         return TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, getResources().getDisplayMetrics());
